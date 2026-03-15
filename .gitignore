@@ -6,3 +6,13 @@
 *.out
 *.pdf
 *.synctex.gz
+*.toc
+*.bbl
+*.blg
+
+# TeXstudio specific
+*.bak
+*.sav
+
+# Texstudio output directory
+build/
