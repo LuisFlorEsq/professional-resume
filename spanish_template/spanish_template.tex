@@ -1,0 +1,226 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages
+\usepackage[
+ignoreheadfoot,
+top=1.5 cm,
+bottom=1.5 cm,
+left=2 cm,
+right=2 cm,
+footskip=1.0 cm
+]{geometry}
+
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0,0,0}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+
+\usepackage[
+pdftitle={Luis Antonio Flores Esquivel CV},
+pdfauthor={Luis Antonio Flores Esquivel},
+colorlinks=true,
+urlcolor=primaryColor
+]{hyperref}
+
+\usepackage{bookmark}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{needspace}
+\usepackage{iftex}
+
+
+% ATS-readable PDF
+\ifPDFTeX
+\input{glyphtounicode}
+\pdfgentounicode=1
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\fi
+
+\usepackage{charter}
+
+% Layout settings
+\raggedright
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{0.15cm}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\titlerule]
+\titlespacing*{\section}{0pt}{0.7\baselineskip}{0.5\baselineskip}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+
+% Custom environments
+\newenvironment{highlights}{
+	\begin{itemize}[topsep=0.15cm,itemsep=0pt,leftmargin=10pt]
+	}{
+	\end{itemize}
+}
+
+\newenvironment{onecolentry}{
+	\begin{adjustwidth}{0cm}{0cm}
+	}{
+	\end{adjustwidth}
+	\vspace{0.02cm}
+}
+
+\newenvironment{twocolentry}[1]{
+	\onecolentry
+	\columnratio{0.75} 
+	\begin{paracol}{2}
+		\raggedright #1
+		\switchcolumn
+	}{
+	\end{paracol}
+	\endonecolentry
+}
+
+
+\newenvironment{header}{
+	\centering\linespread{1.4}
+}{}
+
+% ================= DOCUMENT =================
+\begin{document}
+	
+	\begin{header}
+		{\fontsize{20pt}{20pt}\selectfont Luis Antonio Flores Esquivel}
+		
+		\vspace{6pt}
+		\makebox[\textwidth][c]{%
+			\faEnvelope\,
+			\href{mailto:flores.esquivel.luis.antonio2@gmail.com}{flores.esquivel.luis.antonio2@gmail.com}
+			\;|\;
+			\faPhone*\,
+			+52 55 5102 2244
+			\;|\;
+			\faLinkedin\,
+			LinkedIn: \href{https://linkedin.com/in/lflorese}{lflorese}
+			\;|\;
+			\faGithub\,
+			GitHub: \href{https://github.com/LuisFlorEsq}{LuisFlorEsq}
+		}
+
+	\end{header}
+
+	
+	% ================= EDUCACIÓN =================
+	\section{Educación}
+	
+	\begin{twocolentry}{\textbf{Escuela Superior de Cómputo (ESCOM), Instituto Politécnico Nacional (IPN)}\\
+	Licenciatura en Ingeniería en Inteligencia Artificial}
+	{Graduación: Enero 2026}
+
+	\end{twocolentry}
+	
+	\begin{onecolentry}
+		\begin{highlights}
+			\item Cursos relevantes: Aprendizaje Automático, Aprendizaje Profundo, Procesamiento de Lenguaje Natural (PLN), Visión por Computadora, Computación Bioinspirada
+		\end{highlights}
+	\end{onecolentry}
+	
+	% ================= EXPERIENCIA =================
+	\section{Experiencia Profesional}
+	
+	\begin{twocolentry}
+		{\textbf{IT Intern - Inteligencia Artificial}
+		\\ El Puerto de Liverpool S.A.B. de C.V., Santa Fe, Ciudad de México}
+		{Abr 2025 -- Sept 2025}
+	\end{twocolentry}
+	
+	\begin{onecolentry}
+		\begin{highlights}
+			\item Diseño, desarrollo y despliegue de soluciones de inteligencia artificial en producción para la automatización de procesos en áreas de comercio electrónico, logística y legal.
+			
+			\item Desarrollo de microservicios escalables utilizando FastAPI, Docker y Google Cloud Platform (GCP).
+			
+			\item Implementación de modelos de visión por computadora (YOLO, DETR, U-Net) para detección de objetos y edición automática de imágenes para el foro fotográfico de Liverpool.
+			
+			\item Integración de modelos generativos (Google Gemini, Imagen) para generación y edición automatizada.
+			
+			\item Implementación de algoritmos de optimización para ruteo logístico y estimación de tiempos de entrega.
+			
+			\item Colaboración en la propuesta y desarrollo de un sistema RAG sobre documentos del área legal.
+			
+			\item Optimización de consultas SQL en BigQuery mediante estrategias de caching y mejora del rendimiento.
+			
+		\end{highlights}
+	\end{onecolentry}
+	
+	% ================= PROYECTOS =================
+	\section{Proyectos relevantes}
+	
+	\begin{twocolentry}
+		{\textbf{Sistema de Autenticación Biométrica mediante Reconocimiento Facial\\
+			(Proyecto de Titulación)}\\
+		FastAPI, Docker, FaceNet, Microsoft Azure, Pinecone}
+		{Ago 2024 -- Jun 2025}
+	\end{twocolentry}
+	
+	\begin{onecolentry}
+		\begin{highlights}
+			\item Desarrollo de un sistema de autenticación biométrica basado en reconocimiento facial y Deep Learning.
+			\item Desarrollo de APIs REST con FastAPI (Python) para consumo desde una aplicación móvil en Kotlin.
+			\item Uso de bases de datos vectoriales (Pinecone) para almacenamiento de embeddings faciales y bases de datos relacionales para gestión de usuarios.
+			\item Despliegue de servicios utilizando Docker y Microsoft Azure.
+		\end{highlights}
+	\end{onecolentry}
+	
+	\vspace{0.2cm}
+	
+	\begin{twocolentry}
+		{\textbf{DOF – Inteligencia Artificial (Diario Oficial de la Federación)}\\
+		Django, LangChain, Hugging Face, OpenAI API, Pinecone}
+		{Mar 2024 -- Jun 2024}
+	\end{twocolentry}
+	
+	\begin{onecolentry}
+		\begin{highlights}
+			\item Desarrollo de una aplicación web basada en LLMs para consulta y resumen de documentos gubernamentales.
+			\item Evaluación de modelos de lenguaje de código abierto y propietarios para tareas de Question Answering y Retrieval-Augmented Generation (RAG).
+			\item Implementación de un chatbot conversacional con LangChain y Pinecone.
+			\item Desarrollo de servicios backend con Django para interacción en tiempo real.
+		\end{highlights}
+	\end{onecolentry}
+
+	
+	% ================= HABILIDADES =================
+	\section{Habilidades Técnicas}
+	
+	\begin{onecolentry}
+		\textbf{Lenguajes de Programación:} Python, Java, C, C++, MATLAB
+	\end{onecolentry}
+	
+	\begin{onecolentry}
+		\textbf{Frameworks y Backend:} FastAPI, Django, Flask, LangChain
+	\end{onecolentry}
+	
+	\begin{onecolentry}
+		\textbf{Machine Learning y Deep Learning:} Scikit-learn, TensorFlow, PyTorch, NumPy, Pandas, OpenCV
+	\end{onecolentry}
+	
+	\begin{onecolentry}
+		\textbf{Cloud y DevOps:} Docker, Google Cloud Platform (GCP), Microsoft Azure, Git, GitHub
+	\end{onecolentry}
+	
+	\begin{onecolentry}
+		\textbf{Bases de Datos:} Bases de datos vectoriales (Pinecone, Weavite) Bases de datos relacionales (MySQL, PostgreSQL)
+	\end{onecolentry}
+	
+	% ================= CERTIFICACIONES =================
+	\section{Certificaciones y Formación Complementaria}
+	
+	\begin{onecolentry}
+		\begin{highlights}
+			\item Google Cloud Computing Foundations Certificate – Google Cloud Platform
+			\item Escuela de Verano de Ciencias Cognitivas Computacionales y Procesamiento de Lenguaje Natural (EVCCCPLN 2023, 2024)
+		\end{highlights}
+	\end{onecolentry}
+	
+\end{document}
