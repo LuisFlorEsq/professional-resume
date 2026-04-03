@@ -58,7 +58,7 @@ urlcolor=primaryColor
 
 % Custom environments
 \newenvironment{highlights}{
-	\begin{itemize}[topsep=0.15cm,itemsep=0pt,leftmargin=10pt]
+	\begin{itemize}[topsep=0pt,itemsep=1pt,leftmargin=10pt]
 	}{
 	\end{itemize}
 }
@@ -67,12 +67,12 @@ urlcolor=primaryColor
 	\begin{adjustwidth}{0cm}{0cm}
 	}{
 	\end{adjustwidth}
-	\vspace{0.02cm}
+	\vspace{0pt}
 }
 
 \newenvironment{twocolentry}[1]{
 	\onecolentry
-	\columnratio{0.75} 
+	\columnratio{0.75} 
 	\begin{paracol}{2}
 		\raggedright #1
 		\switchcolumn
@@ -106,113 +106,109 @@ urlcolor=primaryColor
 			\faGithub\,
 			GitHub: \href{https://github.com/LuisFlorEsq}{LuisFlorEsq}
 		}
-
+		
 	\end{header}
-
 	
-	% ================= EDUCACIÓN =================
-	\section{Educación}
+	
+	% ================= EDUCATION =================
+	\section{Education}
 	
 	\begin{twocolentry}{\textbf{Escuela Superior de Cómputo (ESCOM), Instituto Politécnico Nacional (IPN)}\\
-	Licenciatura en Ingeniería en Inteligencia Artificial}
-	{Graduación: Enero 2026}
-
+	B.S. in Artificial Intelligence Engineering}
+	{Graduation: Jan 2026}
 	\end{twocolentry}
 	
 	\begin{onecolentry}
 		\begin{highlights}
-			\item Cursos relevantes: Aprendizaje Automático, Aprendizaje Profundo, Procesamiento de Lenguaje Natural (PLN), Visión por Computadora, Computación Bioinspirada
+			\item Relevant courses: Machine Learning, Deep Learning, Natural Language Processing (NLP), Computer Vision.
 		\end{highlights}
 	\end{onecolentry}
 	
-	% ================= EXPERIENCIA =================
-	\section{Experiencia Profesional}
+	% ================= PROFESSIONAL EXPERIENCE =================
+	\section{Experience}
 	
 	\begin{twocolentry}
-		{\textbf{IT Intern - Inteligencia Artificial}
-		\\ El Puerto de Liverpool S.A.B. de C.V., Santa Fe, Ciudad de México}
-		{Abr 2025 -- Sept 2025}
+		{\textbf{IT Intern - Artificial Intelligence}
+			\\ El Puerto de Liverpool S.A.B. de C.V., Santa Fe, Mexico City} 
+			{Apr 2025 -- Sept 2025}
 	\end{twocolentry}
 	
 	\begin{onecolentry}
 		\begin{highlights}
-			\item Diseño, desarrollo y despliegue de soluciones de inteligencia artificial en producción para la automatización de procesos en áreas de comercio electrónico, logística y legal.
+			\item Design, development, and deployment of production-level artificial intelligence solutions for process automation in e-commerce, logistics, and legal areas.
 			
-			\item Desarrollo de microservicios escalables utilizando FastAPI, Docker y Google Cloud Platform (GCP).
+			\item Development of scalable microservices using FastAPI, Docker, and Google Cloud Platform (GCP).
 			
-			\item Implementación de modelos de visión por computadora (YOLO, DETR, U-Net) para detección de objetos y edición automática de imágenes para el foro fotográfico de Liverpool.
+			\item Implementation of computer vision models (YOLO, DETR, U-Net) for object detection and automated image editing for Liverpool's photography studio.
 			
-			\item Integración de modelos generativos (Google Gemini, Imagen) para generación y edición automatizada.
+			\item Integration of generative models (Google Gemini, Imagen) for automated generation and editing.
 			
-			\item Implementación de algoritmos de optimización para ruteo logístico y estimación de tiempos de entrega.
+			\item Implementation of optimization algorithms for logistics routing and delivery time estimation.
 			
-			\item Colaboración en la propuesta y desarrollo de un sistema RAG sobre documentos del área legal.
+			\item Collaboration on the proposal and development of a RAG system for legal documents.
 			
-			\item Optimización de consultas SQL en BigQuery mediante estrategias de caching y mejora del rendimiento.
+			\item Optimization of SQL queries in BigQuery using caching strategies and performance improvements.
 			
 		\end{highlights}
 	\end{onecolentry}
 	
-	% ================= PROYECTOS =================
-	\section{Proyectos relevantes}
+	% ================= RELEVANT PROJECTS =================
+	\section{Projects}
 	
 	\begin{twocolentry}
-		{\textbf{Sistema de Autenticación Biométrica mediante Reconocimiento Facial\\
-			(Proyecto de Titulación)}\\
+		{\textbf{Biometric Authentication System via Facial Recognition}\\
 		FastAPI, Docker, FaceNet, Microsoft Azure, Pinecone}
 	\end{twocolentry}
 	
 	\begin{onecolentry}
 		\begin{highlights}
-			\item Desarrollo de un sistema de autenticación biométrica basado en reconocimiento facial y Deep Learning.
-			\item Desarrollo de APIs REST con FastAPI (Python) para consumo desde una aplicación móvil en Kotlin.
-			\item Uso de bases de datos vectoriales (Pinecone) para almacenamiento de embeddings faciales y bases de datos relacionales para gestión de usuarios.
-			\item Despliegue de servicios utilizando Docker y Microsoft Azure.
+			\item Development of a biometric authentication system based on facial recognition and Deep Learning.
+			\item Development of RESTful APIs with FastAPI (Python) for consumption from a mobile application in Kotlin.
+			\item Use of vector databases (Pinecone) for storing facial embeddings and relational databases for user management.
+			\item Deployment of services using Docker and Microsoft Azure.
 		\end{highlights}
 	\end{onecolentry}
 	
-	\vspace{0.2cm}
-	
 	\begin{twocolentry}
-		{\textbf{DOF – Inteligencia Artificial (Diario Oficial de la Federación)}\\
+		{\textbf{DOF - AI (Diario Oficial de la Federación)}\\
 		Django, LangChain, Hugging Face, OpenAI API, Pinecone}
 	\end{twocolentry}
 	
 	\begin{onecolentry}
 		\begin{highlights}
-			\item Desarrollo de una aplicación web basada en LLMs para consulta y resumen de documentos gubernamentales.
-			\item Evaluación de modelos de lenguaje de código abierto y propietarios para tareas de Question Answering y Retrieval-Augmented Generation (RAG).
-			\item Implementación de un chatbot conversacional con LangChain y Pinecone.
-			\item Desarrollo de servicios backend con Django para interacción en tiempo real.
+			\item Development of a web application based on LLMs for querying and summarizing government documents.
+			\item Evaluation of open-source and proprietary language models for Question Answering and Retrieval-Augmented Generation (RAG) tasks.
+			\item Implementation of a conversational chatbot with LangChain and Pinecone.
+			\item Development of backend services with Django for real-time interaction.
 		\end{highlights}
 	\end{onecolentry}
-
 	
-	% ================= HABILIDADES =================
-	\section{Habilidades Técnicas}
+	
+	% ================= TECHNICAL SKILLS =================
+	\section{Technical Skills}
 	
 	\begin{onecolentry}
-		\textbf{Lenguajes de Programación:} Python, Java, C, C++, MATLAB
+		\textbf{Programming Languages:} Python, Java, C, C++, MATLAB
 	\end{onecolentry}
 	
 	\begin{onecolentry}
-		\textbf{Frameworks y Backend:} FastAPI, Django, Flask, LangChain
+		\textbf{Frameworks and Backend:} FastAPI, Django, Flask, LangChain
 	\end{onecolentry}
 	
 	\begin{onecolentry}
-		\textbf{Machine Learning y Deep Learning:} Scikit-learn, TensorFlow, PyTorch, NumPy, Pandas, OpenCV
+		\textbf{Machine Learning and Deep Learning:} Scikit-learn, TensorFlow, PyTorch, NumPy, Pandas, OpenCV
 	\end{onecolentry}
 	
 	\begin{onecolentry}
-		\textbf{Cloud y DevOps:} Docker, Google Cloud Platform (GCP), Microsoft Azure, Git, GitHub
+		\textbf{Cloud and DevOps:} Docker, Google Cloud Platform (GCP), Microsoft Azure, Git, GitHub
 	\end{onecolentry}
 	
 	\begin{onecolentry}
-		\textbf{Bases de Datos:} Bases de datos vectoriales (Pinecone, Weavite) Bases de datos relacionales (MySQL, PostgreSQL)
+		\textbf{Databases:} Vector databases (Pinecone, Weavite), Relational databases (MySQL, PostgreSQL)
 	\end{onecolentry}
 	
-	% ================= CERTIFICACIONES =================
-	\section{Certificaciones y Formación Complementaria}
+	% ================= CERTIFICATIONS =================
+	\section{Certifications and Complementary Training}
 	
 	\begin{onecolentry}
 		\begin{highlights}

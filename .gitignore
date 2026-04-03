@@ -4,7 +4,6 @@
 *.fls
 *.log
 *.out
-*.pdf
 *.synctex.gz
 *.toc
 *.bbl
@@ -13,6 +12,3 @@
 # TeXstudio specific
 *.bak
 *.sav
-
-# Texstudio output directory
-build/
